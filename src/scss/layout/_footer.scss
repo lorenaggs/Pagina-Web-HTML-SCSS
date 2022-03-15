@@ -1,0 +1,78 @@
+@import '../core/variables';
+
+.footer {
+  height: 545px;
+  background-color: $color-hex;
+  color: $color-grey;
+  padding: 10px 59px 56px 146px;
+
+  &__sections {
+    &--shop {
+      margin: 50px 0px;
+      font-size: 14px;
+      & a {
+        text-decoration: none;
+      }
+    }
+  }
+  .icons__social-icon {
+    width: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30%;
+    padding-top: 3%;
+  }
+
+  .footer__uparrow {
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    height: 24px;
+    position: sticky;
+    bottom: 20px;
+    place-self: end;
+  }
+
+  .icons__social-icon {
+    .mail:hover,
+    .linkedin:hover,
+    .github:hover,
+    .twitter:hover {
+      transform: scale(3) rotate(-360deg);
+      transition: transform 1s;
+    }
+  }
+}
+.title3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a:hover,
+.mail:hover {
+  color: $color-lighthex;
+}
+
+.button:hover,
+.spaces__enjoy--button:hover {
+  background-color: $color-sandybrown;
+  transition: transform 1s;
+  transform: scale(1.5);
+}
+
+@media all and (min-width: 768px) {
+  .footer {
+    height: 276px;
+    &__sections {
+      display: flex;
+      width: 90%;
+      justify-content: space-around;
+    }
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .title3 {
+    font-size: 24px;
+  }
+}

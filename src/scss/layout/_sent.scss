@@ -1,0 +1,56 @@
+@import "../core/variables";
+
+.main {
+  .main__sent {
+    background-color: $color-orange;
+    color: $color-white;
+    height: 352px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--image {
+      align-items: center;
+      width: 112px;
+      height: 98px;
+    }
+    &--title {
+      font-size: 24px;
+    }
+    &--description {
+      font-size: 14px;
+    }
+    &--buy {
+      font-size: 16px;
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  .main {
+    .main__sent {
+      &--title {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .main {
+    .main__sent {
+      height: 400px;
+      &--title {
+        font-size: 36px;
+      }
+      &--description {
+        font-size: 16px;
+      }
+      &--buy {
+        font-size: 16px;
+      }
+    }
+  }
+}

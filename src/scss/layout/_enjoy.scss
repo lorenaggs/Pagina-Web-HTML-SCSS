@@ -1,0 +1,78 @@
+.spaces {
+  background-color: $color-ligh-grey;
+  &__enjoy {
+    height: 339px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+
+    &--title {
+      font-size: 24px;
+    }
+
+    &--description {
+      font-size: 14px;
+    }
+
+    &--button {
+      background: $color-hex;
+      color: $color-white;
+      width: 176px;
+      height: 48px;
+    }
+  }
+
+  &__image {
+    height: 304px;
+    background-image: url(../images/creando-espacios.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  .spaces__enjoy--button a {
+    text-decoration: none;
+    font-size: 16px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .spaces {
+    &__enjoy {
+      height: 339px;
+      &--title {
+        font-size: 30px;
+      }
+    }
+    &__image {
+      height: 414px;
+      background-image: url(../images/creando-espacios.jpg);
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .spaces {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+
+    &__enjoy {
+      width: 400px;
+      align-items: flex-start;
+      text-align: left;
+      margin: auto;
+    }
+
+    &__image {
+      height: 571px;
+      background-position: center;
+    }
+  }
+}

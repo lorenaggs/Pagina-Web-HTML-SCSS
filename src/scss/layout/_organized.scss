@@ -1,0 +1,66 @@
+@import "../core/variables";
+
+.main {
+  background-color: $color-ligh-grey;
+  &__organized {
+    padding: 50px 60px;
+    text-align: center;
+    &--title {
+      font-size: 24px;
+    }
+    &--articles {
+      padding: 0px 40px;
+      text-align: center;
+      &-1 {
+        margin: 50px 0px;
+        &-image {
+          width: 90px;
+          height: 99px;
+          margin-bottom: 40px;
+        }
+        &-title {
+          font-size: 20px;
+        }
+        &-description {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  .main {
+    &__organized {
+      height: 532px;
+      &--articles {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 6%;
+
+        &-1 {
+          &-title {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .main {
+    &__organized {
+      &--title {
+        font-size: 36px;
+      }
+      &--articles {
+        &-1 {
+          &-title {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}

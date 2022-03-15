@@ -1,0 +1,49 @@
+a {
+  color: inherit;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  font-size: 14px;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+h4 {
+  margin-bottom: 3%;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+  margin: 0;
+  margin-block-start: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  color: #0c474b;
+  font-family: "Poppins";
+  font-size: 14px;
+}
+
+$color-hex: #0c474b;
+$color-lighthex: #1c888f;
+$color-grey: #b6c8c9;
+$color-orange: #ff975a;
+$color-ligh-grey: #f0ebe5;
+$color-white: #ffffff;
+$color-sandybrown: sandybrown;
